@@ -56,21 +56,11 @@ pip install numpy opencv-python matplotlib
 
 4. Run the notebook cells sequentially to process the dataset, validate results, and visualize metrics.
 
-## Results
-
-The notebook evaluates detection accuracy across varying batch sizes. Below is a sample plot of `Batch Size vs Loss`:
-
-![Batch Size vs Loss](assets/batch_size_vs_loss.png)
-
 ## Future Enhancements
 
 - **Model Integration**: Add pre-trained models like CNNs for enhanced detection.
 - **Advanced Metrics**: Incorporate metrics like SSIM for improved validation.
 - **Larger Dataset Support**: Optimize the pipeline for larger datasets.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Contributing
 
@@ -78,4 +68,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## Author
 
-[Your Name](https://github.com/your_username)
+[Your Name](https://github.com/vishalvaka)
