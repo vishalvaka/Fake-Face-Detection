@@ -1,3 +1,4 @@
+
 # Fake Face Detection
 
 This project focuses on detecting fake faces using a combination of image processing techniques, distance metrics, and validation methods. The implementation involves generating a dataset, processing images, and using metrics to validate the authenticity of face images. This work is designed to support applications in media forensics and synthetic media detection.
@@ -19,52 +20,62 @@ To run this project, ensure the following libraries are installed:
 Install the requirements using:
 ```bash
 pip install numpy opencv-python matplotlib
+```
 
-Project Structure
+## Project Structure
 
-    Dataset: A dataset folder (data) containing subfolders for real and fake images.
-    Notebook: Jupyter Notebook (Fake_Face_Detection.ipynb) contains code for preprocessing, validation, and visualization.
-    Validation Function: A custom function to test the detection accuracy using random samples.
+- **Dataset**: A dataset folder (`data`) containing subfolders for `real` and `fake` images.
+- **Notebook**: Jupyter Notebook (`Fake_Face_Detection.ipynb`) contains code for preprocessing, validation, and visualization.
+- **Validation Function**: A custom function to test the detection accuracy using random samples.
 
-Usage
+## Usage
 
-    Clone the repository:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/fake-face-detection.git
+   cd fake-face-detection
+   ```
 
-git clone https://github.com/your_username/fake-face-detection.git
-cd fake-face-detection
+2. Place your dataset in the `data` folder:
+   ```
+   data/
+   ├── real/
+   │   ├── image1.jpg
+   │   ├── image2.jpg
+   │   └── ...
+   └── fake/
+       ├── image1.jpg
+       ├── image2.jpg
+       └── ...
+   ```
 
-Place your dataset in the data folder:
+3. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook Fake_Face_Detection.ipynb
+   ```
 
-data/
-├── real/
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-└── fake/
-    ├── image1.jpg
-    ├── image2.jpg
-    └── ...
+4. Run the notebook cells sequentially to process the dataset, validate results, and visualize metrics.
 
-Open the Jupyter Notebook:
+## Results
 
-    jupyter notebook Fake_Face_Detection.ipynb
+The notebook evaluates detection accuracy across varying batch sizes. Below is a sample plot of `Batch Size vs Loss`:
 
-    Run the notebook cells sequentially to process the dataset, validate results, and visualize metrics.
+![Batch Size vs Loss](assets/batch_size_vs_loss.png)
 
-Results
+## Future Enhancements
 
-The notebook evaluates detection accuracy across varying batch sizes. Below is a sample plot of Batch Size vs Loss:
+- **Model Integration**: Add pre-trained models like CNNs for enhanced detection.
+- **Advanced Metrics**: Incorporate metrics like SSIM for improved validation.
+- **Larger Dataset Support**: Optimize the pipeline for larger datasets.
 
-Future Enhancements
+## License
 
-    Model Integration: Add pre-trained models like CNNs for enhanced detection.
-    Advanced Metrics: Incorporate metrics like SSIM for improved validation.
-    Larger Dataset Support: Optimize the pipeline for larger datasets.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-Contributing
+## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
-Author
+
+## Author
+
+[Your Name](https://github.com/your_username)
