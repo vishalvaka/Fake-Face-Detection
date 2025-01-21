@@ -68,4 +68,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## Author
 
-[Your Name](https://github.com/vishalvaka)
+[Vishal Vaka](https://github.com/vishalvaka)
